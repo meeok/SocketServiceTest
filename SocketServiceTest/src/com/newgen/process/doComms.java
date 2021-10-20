@@ -123,6 +123,11 @@ public class doComms implements Runnable, Constants {
             System.out.println("serviceName: " + serviceName);
 
             switch (serviceName){
+                case FETCH_ACCOUNT_BALANCE_DETAILS:{
+                    logger.info("Welcome to Fetch Account Balance details api call");
+                    sendFinacleFiRequest(request,LoadProp.finaclePreProdFiUrl,LoadProp.fetchAccountBalanceAppcode);
+                    break;
+                }
                 case FETCH_BVN:{
                     logger.info("Welcome To Fetch Bvn api call");
                     sendSoapRequest(request,LoadProp.fetchBvnUrl,LoadProp.fetchBvnAction);

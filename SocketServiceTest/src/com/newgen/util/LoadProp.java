@@ -37,6 +37,7 @@ public class LoadProp implements Constants {
     public static String freezeAccountAppCode;
     public static String freezeUnfreezeAcctAppCode;
     public static String fetchCustomerDetailsRetailAppCode;
+    public static String fetchAccountBalanceAppcode;
 
 
     public static String tokenAuthenticationAction;
@@ -81,7 +82,8 @@ public class LoadProp implements Constants {
             placeLienAppCode = properties.getProperty(PLACE_LIEN_APPCODE);
             freezeAccountAppCode = properties.getProperty(FREEZE_ACCOUNT_APPCODE);
             freezeUnfreezeAcctAppCode = properties.getProperty(FREEZE_UNFREEZE_ACCT_APPCODE);
-            fetchCustomerDetailsRetailAppCode= properties.getProperty(FETCH_CUST_DTL_RETAIL_APPCODE);
+            fetchCustomerDetailsRetailAppCode= properties.getProperty(CUSTOMER_DTL_RETAIL_APPCODE);
+            fetchAccountBalanceAppcode = properties.getProperty(ACCOUNT_BALANCE_DETAILS_APPCODE);
 
 
             //Soap Action
